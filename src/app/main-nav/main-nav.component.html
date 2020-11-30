@@ -1,0 +1,29 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false" color="blue">
+    <mat-toolbar style="background-color:#3f51b5" color="primary">Suivi des factures <br>et des règlements </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#" (click)="commande()">Factures</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <p><button mat-button (click)="drawer.toggle()"><mat-icon aria-hidden="false" aria-label="Example home icon">menu</mat-icon></button></p>
+      <span>Facture</span>
+    </mat-toolbar>
+    <div *ngIf=comm>
+    <app-commande></app-commande> 
+  </div>
+  </mat-sidenav-content>
+  
+</mat-sidenav-container>

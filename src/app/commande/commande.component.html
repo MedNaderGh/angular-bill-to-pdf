@@ -1,0 +1,124 @@
+
+    <div class="center">
+      <form [formGroup]="factureForm" enctype="multipart/form-data">
+
+
+            <h2>Creation de Facture</h2>
+            <br>
+          <mat-form-field >
+            <mat-label>TVA</mat-label>
+            <input matInput formControlName="tva">
+            <span matSuffix>%&nbsp;</span>
+          </mat-form-field>
+          <mat-form-field>
+          <mat-label>Nom client</mat-label>
+            <input matInput formControlName="client">
+          </mat-form-field>
+          <br>
+          <mat-form-field >
+            <mat-label>Reference#1</mat-label>
+            <input matInput formControlName="ref1">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Quantité</mat-label>
+            <input matInput formControlName="quant1">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Prix Unitaire</mat-label>
+            <input matInput formControlName="prix1">
+          </mat-form-field>
+          <br>
+          <mat-form-field >
+            <mat-label>Reference#2</mat-label>
+            <input matInput formControlName="ref2">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Quantité</mat-label>
+            <input matInput formControlName="quant2">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Prix Unitaire</mat-label>
+            <input matInput formControlName="prix2">
+          </mat-form-field>
+          <br>
+          <mat-form-field >
+            <mat-label>Reference#3</mat-label>
+            <input matInput formControlName="ref3">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Quantité</mat-label>
+            <input matInput formControlName="quant3">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Prix Unitaire</mat-label>
+            <input matInput formControlName="prix3">
+          </mat-form-field>
+          <br>
+          <mat-form-field >
+            <mat-label>Reference#4</mat-label>
+            <input matInput formControlName="ref4">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Quantité</mat-label>
+            <input matInput formControlName="quant4">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Prix Unitaire</mat-label>
+            <input matInput formControlName="prix4">
+          </mat-form-field>
+          <br>
+          <mat-form-field >
+            <mat-label>Reference#5</mat-label>
+            <input matInput formControlName="ref5">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Quantité</mat-label>
+            <input matInput formControlName="quant5">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Prix Unitaire</mat-label>
+            <input matInput formControlName="prix5">
+          </mat-form-field>
+          <br>
+          <mat-form-field >
+            <mat-label>Reference#6</mat-label>
+            <input matInput formControlName="ref6">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Quantité</mat-label>
+            <input matInput formControlName="quant6">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Prix Unitaire</mat-label>
+            <input matInput formControlName="prix6">
+          </mat-form-field>
+          <br>
+          <mat-form-field >
+            <mat-label>Reference#7</mat-label>
+            <input matInput formControlName="ref7">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Quantité</mat-label>
+            <input matInput formControlName="quant7">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Prix Unitaire</mat-label>
+            <input matInput formControlName="prix7">
+          </mat-form-field>
+          <br>
+          <mat-form-field >
+            <mat-label>Reference#8</mat-label>
+            <input matInput formControlName="ref8">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Quantité</mat-label>
+            <input matInput formControlName="quant8">
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Prix Unitaire</mat-label>
+            <input matInput formControlName="prix8">
+          </mat-form-field>
+          <br>
+          <button mat-raised-button color="primary" (click)=generatePdf(factureForm)>Imprimer Facture</button>
+      </form>
+</div>

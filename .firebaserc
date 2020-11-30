@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "dealtn-5ffa0"
+  },
+  "targets": {
+    "electro-dari": {
+      "hosting": {
+        "Facture": [
+          "electro-dari"
+        ]
+      }
+    }
+  }
+}
